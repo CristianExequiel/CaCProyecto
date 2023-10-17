@@ -1,0 +1,334 @@
+/* Estilos para pantallas pequeñas (hasta 768px) */
+@media screen and (max-width: 768px) {
+    /* Agrega tus estilos específicos para pantallas pequeñas aquí */
+  }
+  
+  /* Estilos para pantallas medianas (769px a 1024px) */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Agrega tus estilos específicos para pantallas medianas aquí */
+  }
+  
+  /* Estilos para pantallas grandes (más de 1024px) */
+  @media screen and (min-width: 1025px) {
+    /* Agrega tus estilos específicos para pantallas grandes aquí */
+  }
+.contenedor{
+    background-color: white;
+    padding: 10px;
+    display: grid;/*crear grilla*/
+    grid-template-columns: repeat(12, 2fr);/*cantidad de columnas*/
+    grid-template-rows: repeat(12, 100px);/*cantidad de filas*/
+    grid-template-areas:"h h h h h h h h h h h h"
+                        "s s s s s s s s s s s s"
+                        "s s s s s s s s s s s s"
+                        "s s s s s s s s s s s s"
+                        "s s s s s s s s s s s s"
+                        "s s s s s s s s s s s s"
+                        "m m m m m m m m m m m m"
+                        "m m m m m m m m m m m m"
+                        "a a a a a a a a a a a a"
+                        "a a a a a a a a a a a a"
+                        "f f f f f f f f f f f f" 
+                        "f f f f f f f f f f f f"
+                        ;
+    gap: 10px;/*espacio entre items*/
+    width: 100%;
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+.header{
+    grid-area: h;
+    background-color:rgb(255, 255, 255);
+}
+.columna {
+    width: 15%; /* Cada columna ocupa el % del ancho total */
+    display: inline-block; /* Permite que las columnas se muestren en línea */
+    padding: 5px; /* Espacio interno en las columnas */
+}
+.mensaje{
+    grid-area: m;
+    background-color: white;
+    align-self: center;
+    text-align: center;
+}
+.anunciar{
+    grid-area: a;
+    align-self: center;
+    text-align: center;
+}
+.btnAnunciar{
+    background-color: #4CAF50; 
+    border: none;
+    color:black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.btnAnunciar:hover{
+    background-color: #008CBA;
+    color: white;
+}
+.pie{
+    grid-area: f;
+    background-color: rgba(144, 147, 175, 0.349);
+    display: inline-block;
+}
+.grid-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea tres columnas de igual ancho */
+    grid-template-rows: (1, 100%);
+    grid-gap: 10px; /* Espacio entre las columnas */ 
+  }
+  .column {
+    height: 100%;
+    padding: 10px; /* Espaciado interno para las columnas (opcional) */
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+  .imgPie {
+    justify-content: center;
+    align-self: center;
+    max-width: 100px;
+    max-height: 84px;
+
+  }
+  .columnPie{
+   
+    display: grid;
+    grid-template-columns: (1,1fr);
+    grid-template-rows: (3, 33%);
+    grid-template-areas:"c1"
+                        "c2"
+                        "c3";
+  }
+  .pieArea1{
+    text-align: center;
+    grid-area: c1;
+  }
+  .pieArea3{
+    text-align: center;
+    grid-area: c3;
+  }
+  .pieArea2{
+    text-align: center;
+    grid-area: c2;
+  }
+  .pieArea2 img{
+    max-width: 50px;
+  }
+
+ 
+
+.logo1{
+    width: 100px;
+    grid-area: h1;
+    align-self: center;
+    border-radius: 8px;
+}
+.nombreHeader{
+    width: 300px;
+    grid-area: h2;
+    align-self: center;
+}
+.button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+/*     margin: 4px 2px;*/
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: solid #008CBA;
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+/*tarjetas*/
+.selectorPrincipal{
+    grid-area: s;
+    background-image: url(./IMG/img_fondo3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center
+}
+.imagenSP{
+    width: 1327px;
+}
+.selectorIn{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    grid-template-rows: repeat(1, 540px);
+    grid-template-areas: "si1 si2";
+    padding-top: 10px;
+}
+.tarjeta {
+    margin: 5px;
+    border: 1px solid #f5f2f200;
+    align-items: center;
+    width: 50%;
+    height: 45%;
+    background-color: rgba(255, 255, 255, 0.3);
+    align-items: center;   
+    font-size:larger;
+}
+div.img:hover {
+    border: 3px solid #777;
+}
+div.img img {
+    width: 100%;
+    height: auto;
+}
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+.tarj1 {
+    grid-area: si1;
+    align-items: center; /* Centramos verticalmente el contenido */
+    margin-left: 40%; /* Posiciona a 50px desde el límite izquierdo */
+}
+.tarj2 {
+    grid-area: si2;
+    align-items: center; /* Centramos verticalmente el contenido */
+    margin-left: 20%; /* Posiciona a 50px antes del límite derecho */
+}
+
+.mainPublicar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.formPublicar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.125rem;
+}
+
+.formA{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.form2{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form3{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+    /*********
+    CONTACTO
+    *********/
+
+    #contact__header{
+        background-color: #82d1a0;
+        display: grid;       
+    }    
+    .contact__title{
+        color: rgb(0, 0, 0);
+        font-size: 40px;
+        text-align: center;
+        margin-top: 1%;
+    }
+
+    .contact__section{
+        margin-left: 5%;
+    }
+
+    .contact__page{
+        background-color: #82d1a0;
+        height: 100%;
+    }
+
+    /*estilos descripcion etiquetas*/
+    .mb-3 {  
+        margin-top: 0; /*espacio entre el texto y el titulo*/ 
+        font-size: 15px;
+        text-align: justify;
+        align-items: center;
+        width: 40%;
+    }
+    
+        /*estilos etiquetas*/
+    .form-label {
+        font-weight: bold; /* Texto en negrita */
+        color: #333; 
+    }
+    
+        /*estilos contenedor de texto*/
+    .form-control {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px; /* Espaciado interno */
+        border: 2px solid #000000; /* Borde alrededor del campo */
+        border-radius: 5px;
+    }
+    
+        /*estilo del boton de envío*/
+    .envio__button {
+        background-color: #3a3333;
+        color: #fff; 
+        padding: 10px 20px; 
+        border: none; 
+        border-radius: 5px; 
+        cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+        margin-bottom: 10px; /*espacio inferior*/
+        box-shadow: 2px 4px 2px 2px rgba(70, 70, 70, 0.8);
+    }
+    
+        /*boton de envio pulsado*/
+    .envio__button:hover {
+        background-color: #0056b3; /* Color de fondo del botón en hover */
+    }
+    
+    #contact__footer{
+        width: 100%;
+        background-color: #82d1a0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Crea tres columnas de igual ancho */
+        grid-template-rows: (1, 100%);
+        grid-gap: 10px; /* Espacio entre las columnas */
+        }
+    
+    #by{
+        background-color: #5e9774;
+        text-align: center;
+    }
+
+    .contact__by{
+        font-size: 15px;
+    }
